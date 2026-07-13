@@ -1,7 +1,11 @@
 
 # .NET SYLLABUS
+-----------------------------------
+### Installation
 
-## Introduction to .NET
+### Dotnet Command
+
+### Introduction to .NET
 - What is .NET
 - .NET Framework
 - .NET Core
@@ -15,71 +19,16 @@
 - Assemblies
 - NuGet Packages
 
-## Development Environment
+### Development Environment
 - Visual Studio
 - VS Code
 - .NET CLI
 - Project Structure
 - Build & Run Process
 
-## C# Basics for .NET
-- Variables
-- Data Types
-- Operators
-- Control Statements
-- Methods
-- Arrays
-- Strings
-- Exception Handling
+---------------------------------------
 
-
-## Object Oriented Programming
-- Classes & Objects
-- Constructors
-- Inheritance
-- Polymorphism
-- Abstraction
-- Encapsulation
-- Interfaces
-- Abstract Classes
-
-## Collections
-- List
-- Dictionary
-- Queue
-- Stack
-- HashSet
-
-## Generics
-- Generic Classes
-- Generic Methods
-
-## Delegates & Events
-- Delegates
-- Multicast Delegates
-- Events
-
-## LINQ 
-- Query Syntax
-- Method Syntax
-- Filtering
-- Sorting
-- Grouping
-- Joining
-
-## Lambda Expressions
-- Anonymous Functions
-
-## Async Programming
-- async
-- await
-- Task
-- Parallel Programming
-
-## File Handling
-- File
-- Directory
-- Streams
+## C# for .NET
 
 ----------------------------
 
@@ -93,6 +42,10 @@
 - Joins
 - Stored Procedures
 
+# LINQ 3
+
+--------------------------
+
 ## ADO.NET
 - SqlConnection
 - SqlCommand
@@ -100,7 +53,7 @@
 - DataSet
 - DataAdapter
 
-## Entity Framework Core 🔥
+## Entity Framework Core 
 - ORM Concepts
 - DbContext
 - DbSet
@@ -113,36 +66,7 @@
 
 -----------------------------------
 
-## ASP.NET Core Basics
-- ASP.NET Core Introduction
-- Project Structure
-- Middleware
-- Configuration
-- Dependency Injection
-
-## ASP.NET Core MVC
-- MVC Architecture
-- Models
-- Views
-- Controllers
-- Razor Syntax
-- Routing
-- Validation
-
-## ASP.NET Core Web API
-- REST API
-- HTTP Methods
-- API Controllers
-- JSON Handling
-- Swagger
-- API Routing
-- Status Codes
-
-## Authentication & Authorization
-- Identity
-- Cookie Authentication
-- JWT Authentication
-- Role Based Authorization
+## ASP.NET Core 
 
 -----------------------------
 
@@ -170,10 +94,6 @@
 - Distributed Cache
 - Redis Basics
 
-## Logging
-- ILogger
-- Serilog
-- NLog
 
 ## Real Time Applications
 - SignalR
@@ -279,14 +199,3 @@
 - Banking System
 - Microservices Project
 - Real Time Chat Application
-
-
-# 📚 INTERVIEW PREPARATION
-
-- C# Interview Questions
-- LINQ Interview Questions
-- ASP.NET Core Questions
-- Entity Framework Questions
-- SQL Questions
-- Microservices Questions
-- System Design Questions

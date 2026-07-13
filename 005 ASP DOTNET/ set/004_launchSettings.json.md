@@ -1,0 +1,12 @@
+# launchSettings.json
+
+```json
+{
+  "profiles": {
+    "MyApi": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
+```
