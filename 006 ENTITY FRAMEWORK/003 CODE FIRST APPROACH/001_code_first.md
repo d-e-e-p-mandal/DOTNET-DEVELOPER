@@ -109,25 +109,10 @@ public class AppDbContext : DbContext
 
 ---
 
-# Migration Commands
-
-```bash
-dotnet ef migrations add InitialCreate
-```
-
-- Creates migration file
-
----
-
-```bash
-dotnet ef database update
-```
-
+# Migration 
 - Creates database and tables
 
----
-
-# What Happens Internally?
+### What Happens Internally?
 
 1. EF checks model classes
 2. Creates migration file

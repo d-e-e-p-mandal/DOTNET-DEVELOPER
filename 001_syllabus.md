@@ -177,8 +177,6 @@
 - Swagger
 
 ## Version Control
-- Git
-- GitHub
 
 
 # PROJECTS

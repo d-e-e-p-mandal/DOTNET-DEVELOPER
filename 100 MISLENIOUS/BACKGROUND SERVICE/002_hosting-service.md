@@ -13,6 +13,8 @@ There are two ways to create a Hosted Service.
 - Recommended approach.
 - Automatically implements IHostedService.
 
+
+[BackgroundService](#backgroundservice-1)
 -------
 
 # IHostedService

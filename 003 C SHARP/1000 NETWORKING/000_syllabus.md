@@ -133,6 +133,8 @@
 - Secure Upload / Download
 
 ## Module 16: SFTP File Transfer
+
+#### Renci.SshNet.SftpClient
 - SSH/SFTP Connection Setup (via SSH.NET — `Renci.SshNet.SftpClient`)
 - Username-Password Authentication
 - Private Key / Public Key Authentication
@@ -151,6 +153,46 @@
 - Progress Reporting (Transfer %)
 - Asynchronous & Background Transfer
 - Logging & Error Handling (SFTP Exceptions)
+
+#### WinSCP
+- WinSCP Installation & Setup
+- Session Configuration (`SessionOptions`)
+- SFTP / SCP / FTP / FTPS / WebDAV / S3 Connection
+- Username-Password Authentication
+- Private Key / Public Key Authentication
+- Pageant / SSH Agent Authentication
+- Host Key Verification
+- Open / Close / Reconnect Session
+- Upload File / Download File
+- Resume Upload / Resume Download
+- Upload Multiple Files
+- Download Multiple Files
+- Synchronize Directories
+- Mirror Directory
+- List Files & Directories
+- Search & Filter Files
+- Create / Delete / Rename Directory
+- Change Directory
+- Delete / Rename / Move / Copy File
+- Check File Exists / Directory Exists
+- Read / Write / Append File Content
+- File Permissions & Attributes
+- Recursive Upload / Download (Folder)
+- Symbolic Links
+- Transfer Queue
+- Progress Reporting (Transfer %)
+- Speed Limiting
+- Background & Parallel Transfer
+- WinSCP .NET Assembly (`WinSCP.Session`)
+- WinSCP Command Line (`winscp.com`)
+- WinSCP Scripting
+- PowerShell Automation
+- Scheduled Automation
+- Logging (Session / XML / Debug)
+- Error Handling (WinSCP Exceptions)
+- Connection Timeout & Retry Logic
+- Security Best Practices
+- Performance Optimization
 
 ## Module 17: Email Networking
 - SmtpClient & SMTP Authentication

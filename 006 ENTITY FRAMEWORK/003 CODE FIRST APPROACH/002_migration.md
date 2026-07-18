@@ -2,6 +2,7 @@
 
 **What is Migration?**
 - Migration is a feature that tracks database changes.
+- It generate system files in database.
 
 Used for:
 - Creating tables
@@ -38,13 +39,11 @@ public class Employee
 ```
 
 **Create Migration:**
-
 ```bash
 dotnet ef migrations add InitialCreate
 ```
 
 **Update Database:**
-
 ```bash
 dotnet ef database update
 ```
@@ -65,7 +64,6 @@ Project
 ```
 
 **Purpose:**
-
 - Stores database change history.
 
 **Migration Process:**
@@ -82,10 +80,10 @@ Database
 
 # Add Migration ; (One table add)
 
-# What is Add Migration?
+### What is Add Migration?
 - Creates migration files based on model changes.
 
-# Command
+### Command
 
 ```bash
 dotnet ef migrations add InitialCreate
@@ -227,32 +225,18 @@ Migrations
 ├── AddDepartment
 ```
 
----
-
-# -> Run
-
-```bash
-dotnet ef migrations remove
-```
 **After:**
-
 ```text
 Migrations
 │
 ├── InitialCreate
 ```
 
-## IMPORTANT
-
-Works only for:
-
-```text
-Last Migration
-```
+##### IMPORTANT: Works only for: `Last Migration`
 
 
-# Use Case
 
+### Use Case
 When:
 - Wrong migration created
 - Model mistake fixed

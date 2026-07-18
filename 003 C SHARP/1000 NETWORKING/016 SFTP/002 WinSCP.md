@@ -40,7 +40,6 @@ SFTP Server
 Bank Server
 ```
 
----
 
 ### How SFTP Connection Works
 - Before transferring files, WinSCP must connect to the SFTP server.
@@ -65,7 +64,7 @@ Protocol  : SFTP
 
 ## Step 1 : Create SessionOptions
 
-## What is SessionOptions?
+### What is SessionOptions?
 
 - `SessionOptions` contains all server connection details.
 
@@ -84,7 +83,6 @@ SessionOptions sessionOptions = new SessionOptions
         SshHostKeyFingerprint = "ssh-rsa 2048 xx:xx:xx"
     };
 ```
-
 
 ### Understanding Each Property
 
@@ -178,8 +176,7 @@ SshHostKeyFingerprint = "ssh-rsa 2048 xx:xx:xx"
 ### What is Session?
 - `Session` represents the actual connection.
 
-Example:
-
+**Example:**
 ```cs
 Session session = new Session();
 ```
@@ -219,15 +216,15 @@ Connection Established
 ### Visual Connection Flow
 
 ```text
-SessionOptions
+  SessionOptions
         ↓
-Session
+    Session
         ↓
-Open()
+      Open()
         ↓
-SFTP Server
+   SFTP Server
         ↓
-Connected
+    Connected
 ```
 
 ---

@@ -1,10 +1,8 @@
 
-## C# Path Class (System.IO):
+# C# Path Class (System.IO):
 
 - The `Path` class is a static class provided by the .NET Framework inside the `System.IO` namespace.
-
 - It is used to work with file and folder path strings. The Path class helps developers create, manipulate, analyze, and retrieve information from file paths safely and efficiently.
-
 - The Path class does not create files or directories. It only works with path strings.
 
 **Namespace:**
@@ -13,8 +11,7 @@ using System.IO;
 ```
 
 
-# Why Path Class is Needed
-
+**Why Path Class is Needed:**
 - When working with files and folders, paths are frequently required.
 
 **Without Path Class:**
@@ -55,25 +52,22 @@ System
       └── Path
 ```
 
-The Path class is static.
+- The Path class is `static`.
 
-Therefore:
-
+**Therefore:**
 ```csharp
 Path.Combine(...)
 Path.GetFileName(...)
 ```
 
-No object creation is required.
+- No object creation is required.
 
-Incorrect:
-
+**Incorrect:**
 ```csharp
 Path p = new Path();
 ```
 
-Correct:
-
+**Correct:**
 ```csharp
 Path.Combine(...)
 ```
@@ -84,32 +78,24 @@ Path.Combine(...)
 
 ## 1. Path.Combine()
 
-### Purpose
-
+**Purpose:**
 - Combines multiple path segments into one complete path.
 
-### Syntax
-
+**Syntax:**
 ```csharp
 Path.Combine(path1, path2);
 ```
 
-### Example
-
+**Example:**
 ```csharp
 string path = Path.Combine("Data", "Employee.txt");
-
 Console.WriteLine(path);
 ```
 
-Output:
+**Output:** `Data\Employee.txt`
 
-```text
-Data\Employee.txt
-```
 
 ### Multiple Segments
-
 ```csharp
 string path = Path.Combine(
     "C:",
@@ -122,11 +108,8 @@ string path = Path.Combine(
 Console.WriteLine(path);
 ```
 
-Output:
+**Output:** `C:\Users\Deep\Documents\File.txt`
 
-```text
-C:\Users\Deep\Documents\File.txt
-```
 
 ### Real World Usage
 
@@ -142,117 +125,80 @@ string filePath = Path.Combine(
 
 ## 2. Path.GetFileName()
 
-### Purpose
+**Purpose:**
+- Returns only the file name from a full path.
 
-Returns only the file name from a full path.
-
-### Example
-
+**Example:**
 ```csharp
 string fileName =
 Path.GetFileName("Data\\Employee.txt");
-
 Console.WriteLine(fileName);
 ```
 
-Output:
+**Output:** `Employee.txt`
 
-```text
-Employee.txt
-```
-
-### Real Example
-
+**Real Example:**
 ```csharp
-string path =
-"C:\\Project\\Reports\\Report.pdf";
-
+string path = "C:\\Project\\Reports\\Report.pdf";
 Console.WriteLine(Path.GetFileName(path));
 ```
 
-Output:
+**Output:** `Report.pdf`
 
-```text
-Report.pdf
-```
 
 ---
 
 ## 3. Path.GetExtension()
 
-### Purpose
+**Purpose:**
+- Returns the file extension.
 
-Returns the file extension.
-
-### Example
-
+**Example:**
 ```csharp
 string extension =
 Path.GetExtension("Data\\Test.txt");
-
 Console.WriteLine(extension);
 ```
 
-Output:
+**Output:** `.txt`
 
-```text
-.txt
-```
 
 ### More Examples
-
 ```csharp
 Path.GetExtension("Photo.jpg");
 ```
+**Output:** `.jpg`
 
-Output:
-
-```text
-.jpg
-```
 
 ```csharp
 Path.GetExtension("Video.mp4");
 ```
+**Output:** `.mp4`
 
-Output:
-
-```text
-.mp4
-```
 
 ```csharp
 Path.GetExtension("Document.pdf");
 ```
 
-Output:
+**Output:** `.pdf`
 
-```text
-.pdf
-```
 
 ---
 
 ## 4. Path.GetDirectoryName()
 
-### Purpose
+**Purpose:**
+- Returns only the directory path.
 
-Returns only the directory path.
-
-### Example
+**Example:**
 
 ```csharp
 string directory =
 Path.GetDirectoryName("C:\\Data\\Employee.txt");
-
 Console.WriteLine(directory);
 ```
+**Output:** `C:\Data`
 
-Output:
-
-```text
-C:\Data
-```
 
 ### Diagram
 
@@ -268,27 +214,22 @@ C:\Data\Employee.txt
 
 ## 5. Path.GetFileNameWithoutExtension()
 
-### Purpose
+**Purpose:**
+- Returns file name without extension.
 
-Returns file name without extension.
-
-### Example
-
+**Example:**
 ```csharp
 string fileName =
 Path.GetFileNameWithoutExtension("Employee.txt");
-
 Console.WriteLine(fileName);
 ```
 
 **Output:**
-
 ```text
 Employee
 ```
 
 ### Diagram
-
 ```text
 Employee.txt
     │     │
@@ -303,7 +244,7 @@ Employee.txt
 
 ### Purpose
 
-Returns the operating system temporary folder path.
+- Returns the operating system temporary folder path.
 
 ### Example
 
@@ -449,8 +390,7 @@ Output (Windows):
 ---
 
 ## Path.AltDirectorySeparatorChar
-
-Returns alternative directory separator.
+- Returns alternative directory separator.
 
 ```csharp
 Console.WriteLine(Path.AltDirectorySeparatorChar);

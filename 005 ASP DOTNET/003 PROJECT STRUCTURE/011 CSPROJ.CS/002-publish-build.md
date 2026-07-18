@@ -8,6 +8,12 @@
 dotnet publish -c Release -o .\publish -p:EnvironmentName=Development
 ```
 
+```bash
+dotnet publish -c Release -o .\publish /p:EnvironmentName=Development
+```
+
+
+### If We Want only that env file with appsetting.csproj + <Selected>
 
 **File:** `.csproj` : Add this content in project
 ```xml

@@ -276,6 +276,10 @@ public Department Department
 **Result:**
 - Connects Two Tables
 
+Rule: How to use: / auto-generated
+- Data must be saved before
+- If anthing mistake like - use trancsaction, rollback
+
 
 ### [InverseProperty]
 
