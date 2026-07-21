@@ -14,11 +14,12 @@ There are two ways to create a Hosted Service.
 - Automatically implements IHostedService.
 
 
-[BackgroundService](#backgroundservice-1)
+[IHostedService](#ihostedservice) | [BackgroundService](#backgroundservice-1) (Use this strictly) |
+
 -------
 
 # IHostedService
-
+- A class implementing this interface becomes a Hosted Service.
 ```cs
 public interface IHostedService
 {
@@ -27,9 +28,6 @@ public interface IHostedService
     Task StopAsync(CancellationToken cancellationToken);
 }
 ```
-
-- A class implementing this interface becomes a Hosted Service.
-
 
 **Responsibilities:**
 You implement:

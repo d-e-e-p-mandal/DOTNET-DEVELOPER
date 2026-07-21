@@ -314,3 +314,56 @@ Drop Database
       ↓
 Delete Database
 ```
+
+
+--------------
+
+
+## Remove :
+Yes, but only if the last migration has not been applied to the database.
+
+Case 1: Migration not applied to the database ✅
+
+M1 → M2 → M3
+
+Run:
+
+dotnet ef migrations remove
+
+Result:
+
+M1 → M2
+
+Run again:
+
+dotnet ef migrations remove
+
+Result:
+
+M1
+
+This works correctly.
+
+⸻
+
+Case 2: Migration already applied to the database ⚠️
+
+If M3 has already been applied using:
+
+dotnet ef database update
+
+then:
+
+dotnet ef migrations remove
+
+will fail with an error similar to:
+
+The migration has already been applied to the database.
+
+First, roll the database back:
+
+dotnet ef database update M2
+
+Then remove the migration:
+
+dotnet ef migrations remove

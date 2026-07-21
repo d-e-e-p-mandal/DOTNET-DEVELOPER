@@ -17,6 +17,15 @@ In **Entity Framework Core (Code First)**, there are **three common ways** to cr
 
 ---
 
+## Step 1: 
+**Create Migration:**
+```bash
+dotnet ef migrations add InitialCreate
+```
+
+## Step 2:
+[EnsureCreated](#1-ensurecreated) | [database.Migrate](#databasemigrate) | [Command-Line](#command)
+
 # 1. EnsureCreated()
 
 ## What is EnsureCreated()?

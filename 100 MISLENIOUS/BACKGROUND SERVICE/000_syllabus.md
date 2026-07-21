@@ -77,7 +77,7 @@ Thread Contention
 
 ⸻
 
-## 9. Thread Pool
+## Thread Pool
 
 What is Thread Pool
 
