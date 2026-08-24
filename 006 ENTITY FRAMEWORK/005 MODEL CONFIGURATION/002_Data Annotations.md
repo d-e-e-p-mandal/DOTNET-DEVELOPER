@@ -450,8 +450,7 @@ public string Name { get; set; }
 - Format display value.
 
 ```cs
-[DisplayFormat(
-DataFormatString = "{0:dd/MM/yyyy}")]
+[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
 public DateTime DOB
 {
     get;

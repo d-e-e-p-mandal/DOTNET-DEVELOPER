@@ -197,12 +197,7 @@
 
 ---
 
-# UNIT 17: Background Services
 
-## Hosted Services
-## Worker Services
-## Background Tasks
-## Scheduled Jobs
 
 ---
 
@@ -304,4 +299,3 @@
 - Jenkins Basics
 
 ---
-
